@@ -1,0 +1,277 @@
+
+
+body{
+    width:100%;
+   display: block;
+    position: relative;
+    display: flex;
+    background-color: aliceblue;
+}
+#menu{
+   padding-top: 0;
+    background: darkblue;
+    width:250px;
+    height:300;
+}
+#menu .items{
+    margin: top 40px;
+    
+}
+#menu .items li{
+    color:black;
+    list-style: none;
+
+}
+#menu .items li i{
+    width:30px;
+height:30px;
+line-height:30px;
+text-align: center;
+margin:0 10px 25px;
+list-style: none;
+text-decoration: none;}
+#menu .items li:hover i,
+#menu .items li:hover i{
+    color:aliceblue;
+}
+
+#menu .items li i:hover{
+    color:aliceblue;
+}
+#menu .items li a{
+    text-decoration: none;
+    transition: 0s;
+    color: black;
+}
+
+#menu .items li a:hover{
+    color:aliceblue;
+}
+ .n1{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    
+ }
+
+#menu-btn{
+    color:black;
+    font-size: 20px;
+    cursor: pointer;
+    margin-right: 20px;
+display: none;
+}
+#interface{
+    width:100%;
+    
+}
+.i-name{
+    margin-top: 90px;
+}
+
+#interface .navigation{
+display: flex;
+align-items: center;
+justify-content: space-between;
+background: #fff;
+padding: 30px 15px;
+border-bottom: 3px solid blue;
+position: fixed;
+width: 80%;
+}
+
+#interface .navigation .search{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 14px;
+    border-color: aqua;
+    border-radius: 4px;
+}
+
+#interface .navigation .search i{
+    margin-right: 16px;
+}
+#interface .navigation .profile{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#interface .navigation .profile i{
+    margin-right: 20px;
+    font-size: 19px;
+    font-weight: 400;
+}
+#interface .navigation .profile img{
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.i-name{
+    color:black;
+    padding: 20px 30px 0 30px;
+    font-size: 24px;
+    font-weight: 700;
+}
+.values{
+    padding: 20px 30px 0 30px;
+    display: flex;
+ justify-content: space-between;
+    align-items: center;
+}
+.values .val-box{
+    background: #fff;
+    width:200px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    box-shadow: black;
+}
+.values .val-box i{
+    font-size: 25px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+    background-color: chartreuse;
+    margin-right: 15px;
+    justify-content: space-between;
+}
+.values .val-box:nth-child(1) i{
+    background: brown;
+}
+
+.values .val-box:nth-child(2) i{
+    background: purple;
+}
+.values .val-box:nth-child(3) i{
+    background: palegreen;
+}
+.values .val-box:nth-child(4) i{
+    background: yellowgreen;
+}
+.values .val-box span{
+    font-size: 15px;
+   
+}
+.values .val-box .box{
+    font-size: 18px;
+}
+.board{
+    width: 94%;
+    margin: 30px 0 30px 30px;
+    overflow: auto;
+    background: #fff;
+   
+   
+    border-radius: 8px;
+    
+}
+
+.board img{
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+    border-radius:50%;
+    margin-right: 15px;
+}
+.board h5{
+    font-weight: 600;
+    font-size: 14px;
+}
+.board p{
+    font-weight: 400;
+    font-size: 13px;
+}
+.board .people{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: start;
+}
+table{
+    border-collapse: collapse;
+   
+}
+tr{
+    border-bottom: red;
+}
+thead td{
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 400;
+    background: #f9fafb;
+    text-align: start;
+    padding: 15px;
+    
+}
+tbody tr td{
+    padding: 10px 15px;
+   
+}
+.Active  p{
+    font-size: large;
+    color: blue;
+    font-weight: 600;
+   
+}
+
+
+
+.edit a{
+text-decoration: none;
+font-size: large;
+color: blue;
+font-weight: 600;
+}
+@media (max-width:769px) {
+    #menu {
+        width: 270px;
+       position: fixed;
+       left: -270px;
+       transition: 0.3sease;
+    }
+    #menu.Active{
+        left: 0px;
+    }
+    #menu-btn{
+        display: initial;
+    }
+    
+    #interface {
+        width: 100%;
+        display: inline-block;
+        margin-left: 0px;
+        transition: 0.3sease;
+    }
+    #menu.Active~  #interface {
+        width:calc(100%-270px);
+        margin-left: 270px;
+    }
+    #interface .navigation {
+       
+        width: 80%;
+    }
+    .values {
+        padding: 30px 30px 0 30px;
+        justify-content: flex-start;
+       
+    }
+    .values .val-box {
+        
+        padding: 16px 20px;
+       margin: 10px 20px 5px 0;
+    }
+    .board{
+        width: 92%;
+        padding: 0;
+        overflow-x:auto;
+    }
+}
